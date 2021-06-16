@@ -28,5 +28,4 @@ public class p1085 {
 		}
 		System.out.println(rst);
 	}
-
 }
