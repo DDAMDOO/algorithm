@@ -1,4 +1,4 @@
-package algorithm;
+package algorithm.class1;
 
 public class p10171 {
 	public static void main(String[] args) {

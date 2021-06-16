@@ -1,4 +1,4 @@
-package algorithm;
+package algorithm.class1;
 
 import java.io.BufferedReader;
 import java.io.IOException;
