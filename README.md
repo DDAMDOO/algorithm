@@ -59,7 +59,7 @@ id : DDAMDOO
 * ~~Bronze II 2775	부녀회장이 될테야~~	
 * ~~Bronze II 2798	블랙잭 ESSENTIAL~~	
 * ~~Bronze II 15829	Hashing~~	
-* Bronze I 1259	팰린드롬수 ESSENTIAL	
+* ~~Bronze I 1259	팰린드롬수 ESSENTIAL~~	
 * Bronze I 2839	설탕 배달	
 * Bronze I 2869	달팽이는 올라가고 싶다	
 * Bronze I 11050	이항 계수 1 ESSENTIAL	
