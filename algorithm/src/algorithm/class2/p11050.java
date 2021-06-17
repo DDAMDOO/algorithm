@@ -15,7 +15,7 @@ public class p11050 {
 		int a = Integer.parseInt(st.nextToken());
 		int b = Integer.parseInt(st.nextToken());
 		int sum = 1;
-		// a!/(b!(a-b)!)
+
 		for (int i = a; i > a - b; i--) {
 			sum *= i;
 		}
