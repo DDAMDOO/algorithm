@@ -3,6 +3,7 @@ package algorithm.class2;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class p1181 {
@@ -22,19 +23,21 @@ public class p1181 {
 					temp = s[i];
 					s[i] = s[j];
 					s[j] = temp;
-				} else if (s[i].length() == s[j].length()) {
-					for (int k = 0; k < s[i].length(); k++) {
-						System.out.println(s[i].charAt(k) + " " + s[j].charAt(k));
-//						if(s[i].charAt(k) >s[i].charAt(k)) {
-//							
-//						}
-					}
 				}
 			}
 		}
-//		for (int i = 0; i < a; i++) {
-//			System.out.println(s[i]);
-//		}
-	}
+		for (int i = 0; i < a; i++) {
+			for (int j = i + 1; j < a; j++) {
+				if (s[i].length() == s[j].length()) {
+					Arrays.sort(s, i, j);
+				}
+			}
+		}
 
+		for (int i = 0; i < a; i++) {
+			if (i < a - 1 && !s[i].contentEquals(s[i + 1])) {
+				System.out.println(s[i]);				
+			}
+		}
+	}
 }
