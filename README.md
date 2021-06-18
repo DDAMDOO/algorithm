@@ -64,7 +64,8 @@ id : DDAMDOO
 * ~~Bronze I 2869	달팽이는 올라가고 싶다~~	
 * ~~Bronze I 11050	이항 계수 1 ESSENTIAL~~	
 * ~~Silver V 1018	체스판 다시 칠하기 ESSENTIAL~~	
-* Silver V 1181	단어 정렬 ESSENTIAL	
+* Silver V 1181	단어 정렬 ESSENTIAL
+  * Collections, comparator관련 정리하기	
 * Silver V 1436	영화감독 숌	
 * Silver V 2609	최대공약수와 최소공배수 ESSENTIAL	
 * Silver V 2751	수 정렬하기 2 ESSENTIAL	
