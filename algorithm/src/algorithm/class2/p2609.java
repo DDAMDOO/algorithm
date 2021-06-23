@@ -19,5 +19,4 @@ public class p2609 {
 		System.out.println(a);
 		System.out.println(c/a);
 	}
-
 }
