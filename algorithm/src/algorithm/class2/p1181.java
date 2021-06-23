@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.StringTokenizer;
 
 public class p1181 {
@@ -15,28 +16,26 @@ public class p1181 {
 
 		int a = Integer.parseInt(st.nextToken());
 		String[] s = new String[a];
-		String temp;
-		for (int i = 0; i < a; i++) {
-			s[i] = br.readLine();
-			for (int j = 0; j < i; j++) {
-				if (s[i].length() < s[j].length()) {
-					temp = s[i];
-					s[i] = s[j];
-					s[j] = temp;
-				}
-			}
-		}
-		for (int i = 0; i < a; i++) {
-			for (int j = i + 1; j < a; j++) {
-				if (s[i].length() == s[j].length()) {
-					Arrays.sort(s, i, j);
-				}
-			}
-		}
 
 		for (int i = 0; i < a; i++) {
-			if (i < a - 1 && !s[i].contentEquals(s[i + 1])) {
-				System.out.println(s[i]);				
+			s[i] = br.readLine();
+		}
+
+		Arrays.sort(s, new Comparator<String>() {
+			public int compare(String a, String b) {
+				if (a.length() == b.length()) {
+					return a.compareTo(b);
+				} else {
+					return a.length() - b.length();
+				}
+			}
+		});
+
+		System.out.println(s[0]);
+
+		for (int i = 1; i < a; i++) {
+			if (!s[i].equals(s[i - 1])) {
+				System.out.println(s[i]);
 			}
 		}
 	}
