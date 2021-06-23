@@ -32,7 +32,13 @@ public class p1181 {
 				}
 			}
 		});
-		System.out.println(list);
+		System.out.println(list.get(0));
+
+		for (int i = 1; i < list.size(); i++) {
+			if (!list.get(i).equals(list.get(i - 1))) {
+				System.out.println(list.get(i));
+			}
+		}
 ////		arrays.sort 사용시
 //		String[] s = new String[a];
 //
