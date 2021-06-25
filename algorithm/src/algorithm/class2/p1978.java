@@ -25,7 +25,7 @@ public class p1978 {
 		
 		for (int i = 0; i < a; i++) {
 			cnt = 0;
-			for (int j = 2; j < ary[i]; j++) {
+			for (int j = 2; j <= Math.sqrt(ary[i]); j++) {
 				if (ary[i] % j == 0) {
 					cnt++;
 				}
