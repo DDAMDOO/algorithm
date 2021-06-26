@@ -74,7 +74,7 @@ id : DDAMDOO
 * Silver V 10989	수 정렬하기 3 STANDARD	
 * Silver V 11650	좌표 정렬하기 ESSENTIAL STANDARD	
 * Silver V 11651	좌표 정렬하기 2	
-* Silver IV 1920	수 찾기 ESSENTIAL	
+* ~~Silver IV 1920	수 찾기 ESSENTIAL	~~
 * Silver IV 1978	소수 찾기 ESSENTIAL	
 * Silver IV 2108	통계학	
 * Silver IV 2164	카드2 ESSENTIAL	
