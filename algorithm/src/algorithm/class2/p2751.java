@@ -20,7 +20,7 @@ public class p2751 {
 			list.add(Integer.parseInt(br.readLine()));
 		}
 		
-		Collections.sort(list);;
+		Collections.sort(list);
 		
 		for (int i = 0; i < a; i++) {
 			sb.append(list.get(i) + "\n");
