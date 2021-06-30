@@ -70,11 +70,11 @@ id : DDAMDOO
 * ~~Silver V 2609	최대공약수와 최소공배수 ESSENTIAL~~	
 * Silver V 2751	수 정렬하기 2 ESSENTIAL	
 * ~~Silver V 7568	덩치~~	
-* Silver V 10814	나이순 정렬 ESSENTIAL	
-* Silver V 10989	수 정렬하기 3 STANDARD	
+* ~~Silver V 10814	나이순 정렬 ESSENTIAL~~	
+* ~~Silver V 10989	수 정렬하기 3 STANDARD~~	
 * Silver V 11650	좌표 정렬하기 ESSENTIAL STANDARD	
 * Silver V 11651	좌표 정렬하기 2	
-* ~~Silver IV 1920	수 찾기 ESSENTIAL~~	
+* Silver IV 1920	수 찾기 ESSENTIAL	
 * ~~Silver IV 1978	소수 찾기 ESSENTIAL~~ 	
 * Silver IV 2108	통계학	
 * Silver IV 2164	카드2 ESSENTIAL	
