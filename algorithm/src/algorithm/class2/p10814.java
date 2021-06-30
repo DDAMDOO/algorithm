@@ -18,7 +18,6 @@ public class p10814 {
 		int a = Integer.parseInt(br.readLine());
 
 		String[][] ary = new String[a][2];
-		String[][] temp = new String[1][1];
 
 		for (int i = 0; i < a; i++) {
 			st = new StringTokenizer(br.readLine(), " ");
@@ -37,5 +36,4 @@ public class p10814 {
 		}
 		System.out.println(sb);
 	}
-
 }
