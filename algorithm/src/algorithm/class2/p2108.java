@@ -24,7 +24,7 @@ public class p2108 {
 		for (int i = 0; i < a; i++) {
 			list.add(Integer.parseInt(br.readLine()));
 			sum += list.get(i);
-			index[i + 4000]++;
+			index[list.get(i) + 4000]++;
 			if (list.get(i) < min) {
 				min = list.get(i);
 			}
@@ -33,21 +33,25 @@ public class p2108 {
 			}
 		}
 		Collections.sort(list);
+		int cnt = 0;// ÃÖºó°ª ¼ö
 		int idx = 0;
 		boolean flag = false;
+
 		for (int i = min + 4000; i <= max + 4000; i++) {
-			if (idx < index[i]) {
-				idx = index[i];
+			if (cnt < index[i]) {
+				cnt = index[i];
+				idx = i - 4000;
 				flag = true;
-			} else if (idx == index[i] && flag == true) {
-				idx = index[i];
+			} else if (cnt == index[i] && flag == true) {
+				cnt = index[i];
+				idx = i - 4000;
 				flag = false;
 			}
 		}
-
+		
 		sb.append(Math.round(sum / a) + "\n");
 		sb.append(list.get(a / 2) + "\n");
-		sb.append(list.get(idx - 1) + "\n");
+		sb.append(idx + "\n");
 		sb.append(list.get(a - 1) - list.get(0));
 
 		System.out.println(sb);
