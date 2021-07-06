@@ -76,11 +76,11 @@ id : DDAMDOO
 * ~~Silver V 11651	좌표 정렬하기 2~~	
 * ~~Silver IV 1920	수 찾기 ESSENTIAL~~	
 * ~~Silver IV 1978	소수 찾기 ESSENTIAL~~ 	
-* Silver IV 2108	통계학	
+* ~~Silver IV 2108	통계학~~	
 * Silver IV 2164	카드2 ESSENTIAL	
 * Silver IV 4949	균형잡힌 세상	
-* Silver IV 9012	괄호 ESSENTIAL	
-* Silver IV 10773	제로	
+* ~~Silver IV 9012	괄호 ESSENTIAL~~	
+* ~~Silver IV 10773	제로~~	
 * Silver IV 10816	숫자 카드 2 ESSENTIAL	
 * Silver IV 10828	스택 ESSENTIAL	
 * Silver IV 10845	큐 ESSENTIAL	
