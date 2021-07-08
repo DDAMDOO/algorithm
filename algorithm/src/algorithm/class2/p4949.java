@@ -10,16 +10,14 @@ public class p4949 {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		StringBuilder sb = new StringBuilder();
 		String s;
 		for (;;) {
 			s = br.readLine();
 			if (s.equals(".")) {
 				break;
 			}
-			sb.append(func(s) + "\n");
+			System.out.println(func(s));
 		}
-		System.out.println(sb);
 	}
 	
 	public static String func(String s) {
