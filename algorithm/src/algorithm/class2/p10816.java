@@ -25,22 +25,41 @@ public class p10816 {
 
 		st = new StringTokenizer(br.readLine());
 		for (int i = 0; i < b; i++) {
-			int min = 0;
-			int max = ary.length - 1;
-			int index = ary.length / 2;
 			int k = Integer.parseInt(st.nextToken());
-			int cnt = 1;
-			for (int j = 0; j <= min; j++) {
-				System.out.println("min : " + min + "cnt : " + cnt);
-				if (k > ary[min]) {
-					min += index / cnt;
-				} else if (k < ary[min]) {
-					min -= index / cnt;
-				} else {
-					break;
-				}
-				cnt++;
+			sb.append(max(k, ary) - min(k, ary) + " ");
+		}
+		System.out.println(sb);
+	}
+
+	public static int min(int a, int[] ary) {
+		int start = 0;
+		int end = ary.length;
+		int mid;
+
+		while (start < end) {
+			mid = start + (end - start) / 2;
+			if (a <= ary[mid]) {
+				end = mid;
+			} else {
+				start = mid + 1;
 			}
 		}
+		return start;
+	}
+
+	public static int max(int a, int[] ary) {
+		int start = 0;
+		int end = ary.length;
+		int mid;
+
+		while (start < end) {
+			mid = start + (end - start) / 2;
+			if (a >= ary[mid]) {
+				start = mid + 1;
+			} else {
+				end = mid;
+			}
+		}
+		return start;
 	}
 }
