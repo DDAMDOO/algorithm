@@ -84,10 +84,10 @@ id : DDAMDOO
 * Silver IV 10816	숫자 카드 2 ESSENTIAL	
 * ~~Silver IV 10828	스택 ESSENTIAL~~	
 * ~~Silver IV 10845	큐 ESSENTIAL~~	
-* Silver IV 10866	덱 ESSENTIAL	
-* Silver IV 11866	요세푸스 문제 0 ESSENTIAL	
-* Silver III 1654	랜선 자르기	
-* Silver III 1874	스택 수열	
+* ~~Silver IV 10866	덱 ESSENTIAL~~	
+* ~~Silver IV 11866	요세푸스 문제 0 ESSENTIAL~~	
+* ~~Silver III 1654	랜선 자르기~~	
+* ~~Silver III 1874	스택 수열~~	
 * Silver III 1966	프린터 큐	
 * Silver III 2805	나무 자르기	
 * Silver III 18111	마인크래프트	
