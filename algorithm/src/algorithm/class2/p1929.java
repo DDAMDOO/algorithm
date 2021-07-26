@@ -12,21 +12,25 @@ public class p1929 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
 		StringBuilder sb = new StringBuilder();
-		
+
 		int a = Integer.parseInt(st.nextToken());
 		int b = Integer.parseInt(st.nextToken());
+		boolean[] prime = new boolean[b + 1];
 
-		for (int i = a; i <= b; i++) {
-			int cnt = 0;
-			for (int j = 2; j <= Math.sqrt(i); j++) {
-				if (i % j == 0) {
-					cnt++;
-				}
-			}
-			if (cnt == 0) {
-				sb.append(i + "\n");
+		prime[0] = prime[1] = true;
+
+		for (int i = 2; i <= Math.sqrt(prime.length); i++) {
+			if (prime[i])
+				continue;
+			for (int j = i * i; j < prime.length; j += i) {
+				prime[j] = true;
 			}
 		}
-		System.out.println(sb);
+
+		for (int i = a; i <= b; i++) {
+			if(!prime[i]) {
+				System.out.println(i);
+			}
+		}
 	}
 }

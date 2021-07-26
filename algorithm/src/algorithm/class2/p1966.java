@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.LinkedList;
+import java.util.Queue;
 import java.util.StringTokenizer;
 
 public class p1966 {
@@ -39,13 +40,13 @@ public class p1966 {
 						break;
 					}
 				}
-
+				
 				if(flag == false) {
 					continue;
 				}
-
+				
 				cnt++;
-
+				
 				if(m == idx[0]) {
 					System.out.println(cnt);
 					break;
@@ -53,4 +54,4 @@ public class p1966 {
 			}
 		}
 	}
-} 
+}
