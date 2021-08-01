@@ -1,52 +1,31 @@
 package algorithm.etc;
 
 public class permutation {
-	static void print(int[] arr, int r) {
-		for (int i = 0; i < r; i++)
-			System.out.print(arr[i] + " ");
-		System.out.println();
-	}
-
-	static void per1(int[] arr, int depth, int n, int r) {
+	static void per1(int[] ary, int depth, int n, int r) {
 		if (depth == r) {
-			print(arr, r);
-			return;
-		}
-
-		for (int i = depth; i < n; i++) {
-			swap(arr, depth, i);
-			per1(arr, depth + 1, n, r);
-			swap(arr, depth, i);
-		}
-	}
-
-	static void swap(int[] arr, int depth, int i) {
-		int temp = arr[depth];
-		arr[depth] = arr[i];
-		arr[i] = temp;
-	}
-
-	static void per2(int[] arr, int[] output, boolean[] visited, int depth, int n, int r) {
-		if (depth == r) {
-			print(output, r);
-			return;
-		}
-
-		for (int i = 0; i < n; i++) {
-			if (visited[i] != true) {
-				visited[i] = true;
-				output[depth] = arr[i];
-				per2(arr, output, visited, depth + 1, n, r);
-				output[depth] = 0; // 이 줄은 없어도 됨
-				visited[i] = false;
-				;
+			// 마지막 회차
+			for (int i = 0; i < r; i++) {
+				System.out.print(ary[i] + " ");
 			}
+			System.out.println("\n");
+			return;
 		}
+		for (int i = depth; i < n; i++) {
+			swap(ary, depth, i);
+			per1(ary, depth + 1, n, r);
+			swap(ary, depth, i);
+		}
+	}
+
+	static void swap(int[] ary, int depth, int i) {
+		int temp = ary[depth];
+		ary[depth] = ary[i];
+		ary[i] = temp;
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		int[] ary = { 1, 2, 3 };
+		per1(ary, 0, 3, 2);
 	}
-
 }
