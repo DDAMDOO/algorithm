@@ -1,4 +1,4 @@
-package algorithm.etc;
+package algorithm.bfs;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -41,23 +41,23 @@ public class p16173 {
 
 		q.add(new node(0, 0));
 		while (!q.isEmpty()) {
-			node tmp = q.poll();
-			if (visited[tmp.x][tmp.y]) {
+			node node = q.poll();
+			if (visited[node.x][node.y]) {
 				continue;
 			}
-			if (ary[tmp.x][tmp.y] == -1) {
+			if (ary[node.x][node.y] == -1) {
 				finish = true;
 				break;
 			}
 
-			visited[tmp.x][tmp.y] = true;
+			visited[node.x][node.y] = true;
 
-			int jump = ary[tmp.x][tmp.y];
-			if (tmp.x + jump < a) {
-				q.add(new node(tmp.x + jump, tmp.y));
+			int jump = ary[node.x][node.y];
+			if (node.x + jump < a) {
+				q.add(new node(node.x + jump, node.y));
 			}
-			if(tmp.y + jump < a) {
-				q.add(new node(tmp.x, tmp.y+jump));
+			if(node.y + jump < a) {
+				q.add(new node(node.x, node.y+jump));
 			}
 		}
 		
