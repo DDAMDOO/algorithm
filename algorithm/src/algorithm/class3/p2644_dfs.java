@@ -7,7 +7,7 @@ import java.util.StringTokenizer;
 
 public class p2644_dfs {
 	public static int a;
-	public static int cnt = 0;
+	public static int cnt = -1;
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
@@ -34,20 +34,20 @@ public class p2644_dfs {
 			ary[y][x] = 1;
 		}
 		boolean[] visited = new boolean[a + 1];
-		dfs(ary, visited, start, end, cnt);
+		dfs(ary, visited, start, end, 0);
 		System.out.println(cnt);
 	}
 
 	public static void dfs(int[][] ary, boolean[] visited, int start, int end, int depth) {
 		visited[start] = true;
-		for (int i = 0; i < a; i++) {
-			if (start == end) {
-				cnt = depth;
-				return;
-			}
 
+		if (start == end) {
+			cnt = depth;
+			return;
+		}
+
+		for (int i = 0; i <= a; i++) {
 			if (visited[i] == false && ary[start][i] == 1) {
-				visited[i] = true;
 				dfs(ary, visited, i, end, depth + 1);
 			}
 		}
