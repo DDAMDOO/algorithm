@@ -40,9 +40,9 @@ public class p2644_dfs {
 
 	public static void dfs(int[][] ary, boolean[] visited, int start, int end, int depth) {
 		visited[start] = true;
-		for (int i = 0; i < a; i++) {
+		for (int i = 1; i <= a; i++) {
 			if (start == end) {
-				cnt = depth;
+				cnt = depth + 1;
 				return;
 			}
 
