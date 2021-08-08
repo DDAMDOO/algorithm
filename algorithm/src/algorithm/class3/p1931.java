@@ -39,6 +39,5 @@ public class p1931 {
 			}
 		}
 		System.out.println(cnt);
-
 	}
 }
