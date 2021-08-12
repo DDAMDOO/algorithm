@@ -97,23 +97,23 @@ id : DDAMDOO
 
 ### Class 3 Essential
 
-* Silver V 11723	집합	
-* Silver IV 1620	나는야 포켓몬 마스터 이다솜	
-* Silver IV 1764	듣보잡	
-* Silver III 1003	피보나치 함수	
-* Silver III 1463	1로 만들기 STANDARD	
-* Silver III 2606	바이러스 STANDARD	
-* Silver III 2630	색종이 만들기	
-* Silver III 9095	1, 2, 3 더하기	
-* Silver III 11399	ATM	
-* Silver III 11726	2×n 타일링	
-* Silver II 1012	유기농 배추 STANDARD	
-* Silver II 1931	회의실 배정	
-* Silver II 11279	최대 힙	
-* Silver II 11724	연결 요소의 개수 STANDARD	
-* Silver II 18870	좌표 압축	
+* ~~Silver V 11723	집합~~	
+* ~~Silver IV 1620	나는야 포켓몬 마스터 이다솜~~	
+* ~~Silver IV 1764	듣보잡~~	
+* ~~Silver III 1003	피보나치 함수~~	
+* ~~Silver III 1463	1로 만들기 STANDARD~~	
+* ~~Silver III 2606	바이러스 STANDARD~~	
+* ~~Silver III 2630	색종이 만들기~~	
+* ~~Silver III 9095	1, 2, 3 더하기~~	
+* ~~Silver III 11399	ATM~~	
+* ~~Silver III 11726	2×n 타일링~~	
+* ~~Silver II 1012	유기농 배추 STANDARD~~	
+* ~~Silver II 1931	회의실 배정~~	
+* ~~Silver II 11279	최대 힙~~	
+* ~~Silver II 11724	연결 요소의 개수 STANDARD~~	
+* ~~Silver II 18870	좌표 압축~~	
 * Silver I 1074	Z	
-* Silver I 1697	숨바꼭질	
-* Silver I 1927	최소 힙	
+* ~~Silver I 1697	숨바꼭질~~	
+* ~~Silver I 1927	최소 힙~~	
 * Silver I 7576	토마토 STANDARD	
 * Gold V 7662	이중 우선순위 큐
