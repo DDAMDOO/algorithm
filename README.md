@@ -112,8 +112,8 @@ id : DDAMDOO
 * ~~Silver II 11279	최대 힙~~	
 * ~~Silver II 11724	연결 요소의 개수 STANDARD~~	
 * ~~Silver II 18870	좌표 압축~~	
-* Silver I 1074	Z	
+* ~~Silver I 1074	Z~~	
 * ~~Silver I 1697	숨바꼭질~~	
 * ~~Silver I 1927	최소 힙~~	
-* Silver I 7576	토마토 STANDARD	
-* Gold V 7662	이중 우선순위 큐
+* ~~Silver I 7576	토마토 STANDARD~~	
+* ~~Gold V 7662	이중 우선순위 큐~~
