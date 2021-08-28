@@ -1,0 +1,27 @@
+package algorithm.string;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+public class p14490 {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine(), ":");
+
+		int a = Integer.parseInt(st.nextToken());
+		int b = Integer.parseInt(st.nextToken());
+		int n = gcd(a, b);
+		
+		System.out.println((int)(a/n) + ":" + (int)(b/n));
+	}
+
+	public static int gcd(int a, int b) {
+		if (a % b == 0)
+			return b;
+		return gcd(b, a % b);
+	}
+}
