@@ -8,10 +8,10 @@ import java.util.Queue;
 import java.util.StringTokenizer;
 
 class Node7569 {
+	// x = 높이 y= 가로 z = 세로
 	int x;
 	int y;
 	int z;
-
 	Node7569(int x, int y, int z) {
 		this.x = x;
 		this.y = y;
@@ -66,12 +66,10 @@ public class p7569 {
 						return;
 					}
 					rst = Math.max(rst, ary[i][j][k]);
-//					System.out.print(ary[i][j][k] + " ");
 				}
-//				System.out.println();
 			}
 		}
-//		System.out.println(rst);
+		System.out.println(rst-1);
 		return;
 	}
 
@@ -90,13 +88,11 @@ public class p7569 {
 
 				if (xx > 0 && xx <= h && yy > 0 && yy <= b && zz > 0 && zz <= a) {	
 					if (ary[xx][yy][zz] == 0) {
-						System.out.println(xx + " "+ yy + " " + zz);
 						q.add(new Node7569(xx, yy, zz));
-						ary[xx][yy][zz] = ary[n.x][n.y][n.z] + 1;
+						ary[xx][yy][zz] = ary[x][y][z] + 1;
 					}
 				}
 			}
-			System.out.println();
 		}
 	}
 }
