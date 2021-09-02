@@ -12,28 +12,35 @@ public class p6064 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
 		int a = Integer.parseInt(br.readLine());
-		int[][] ary = new int[a][4];
 		int[] rst = new int[a];
-
 		for (int i = 0; i < a; i++) {
-			StringTokenizer st = new StringTokenizer(br.readLine(), " ");
-			ary[i][0] = Integer.parseInt(st.nextToken());// M
-			ary[i][1] = Integer.parseInt(st.nextToken());// N
-			ary[i][2] = Integer.parseInt(st.nextToken());// x
-			ary[i][3] = Integer.parseInt(st.nextToken());// y
 			rst[i] = -1;
 		}
-
 		for (int i = 0; i < a; i++) {
-			for (int j = 1; j <= ary[i][0] * ary[i][1]; j++) {
-				if (j % ary[i][0] == ary[i][2] && j % ary[i][1] == ary[i][3]) {
-					rst[i] = j;
-					break;
+			StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+			int M = Integer.parseInt(st.nextToken());// M
+			int N = Integer.parseInt(st.nextToken());// N
+			int x = Integer.parseInt(st.nextToken());// x
+			int y = Integer.parseInt(st.nextToken());// y
+
+			int k = M * N / gcd(M, N);
+			for (int j = 0; j  < k; j++) {
+				System.out.println(j * M + x - y);
+				if ((j * M + x - y) % N == 0) {
+					rst[i] = j * M + x;
 				}
 			}
 		}
-
-		for (int i = 0; i < a; i++)
+		
+		for (int i = 0; i < a; i++) {
 			System.out.println(rst[i]);
+		}
+	}
+
+	public static int gcd(int a, int b) {
+		if (b == 0) {
+			return a;
+		}
+		return gcd(b, a % b);
 	}
 }
