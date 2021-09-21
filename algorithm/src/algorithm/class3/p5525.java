@@ -13,19 +13,23 @@ public class p5525 {
 		int a = Integer.parseInt(br.readLine());
 		int b = Integer.parseInt(br.readLine());
 
-		String s = "I";
-		int index = a * 2 + 1;
-		for (int i = 0; i < a; i++) {
-			s += "OI";
-		}
-		int cnt = 0;
 		String str = br.readLine();
-		for (int i = 0; i < str.length() - index; i++) {
-			if (str.substring(i, i + index).equals(s)) {
-				cnt++;
-			}
+		int answer = 0;
+		int[] dp = new int[b];
+
+		for (int i = 0; i < b; i++) {
+			dp[i] = 0;
 		}
 
-		System.out.println(cnt);
+		for (int i = 2; i < b; i++) {
+			String tmp = str.substring(i - 2, i + 1);
+			if (tmp.equals("IOI")) {
+				dp[i] = dp[i - 2] + 1;
+			}
+			if (dp[i] >= a) {
+				answer++;
+			}
+		}
+		System.out.println(answer);
 	}
 }
